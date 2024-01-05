@@ -63,6 +63,10 @@ public class Main {
                     System.out.println("Quitting Application...");
                     inMainMenu = false;
                 }
+
+                default->{
+                    System.out.println("Invalid option. Try again.");
+                }
             }
         }
     }

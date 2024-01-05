@@ -58,6 +58,10 @@ public class MessagesMenuThread extends PhoneThread{
                 case "4"->{
                     this.inMessagesMenu = false;
                 }
+
+                default ->{
+                    System.out.println("Invalid option. Try again.");
+                }
             }
         }
     }

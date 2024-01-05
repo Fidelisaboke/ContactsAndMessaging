@@ -49,6 +49,10 @@ public class ContactsMenuThread extends PhoneThread{
                 case "5"->{
                     this.inContactsMenu = false;
                 }
+
+                default -> {
+                    System.out.println("Invalid option. Try again.");
+                }
             }
         }
     }
