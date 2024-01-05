@@ -26,7 +26,7 @@ public class Phonebook {
      * @return a Phonebook object
      */
 
-    public static Phonebook getInstance(String name, ArrayList<Contact> contacts){
+    public static synchronized Phonebook getInstance(String name, ArrayList<Contact> contacts){
         if(instance == null){
             instance = new Phonebook(name, contacts);
         }

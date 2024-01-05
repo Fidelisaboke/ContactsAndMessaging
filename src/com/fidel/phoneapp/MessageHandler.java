@@ -10,7 +10,7 @@ public class MessageHandler {
         this.messages = messages;
     }
 
-    public static MessageHandler getInstance(ArrayList<Message> messages){
+    public static synchronized MessageHandler getInstance(ArrayList<Message> messages){
         if(instance == null){
             instance = new MessageHandler(messages);
         }
